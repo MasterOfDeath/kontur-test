@@ -11,9 +11,6 @@
         <link href="Content/index-ie8.css" rel="stylesheet" />
         <script src="Scripts/html5ie8/html5.js"></script>
     <![endif]-->
-    <!--[if gte IE 9]>
-        <link href="Content/index-ie.css" rel="stylesheet" />
-    <![endif]-->
 </head>
 <body>
     <aside class="controls normal">
@@ -58,39 +55,45 @@
     <section class="content">
         <div class="content-row content-row-first">
             <div class="matrix matrix-result">
-                <div class="matrix-row" data-row-id="1" data-matrix-type="c">
-                    <input type="text" placeholder="c1.1" value="" class="disabled-input" readonly disabled /><!--
-                 --><input type="text" placeholder="c1.2" value="" class="disabled-input" readonly disabled /><!--
-             --></div>
-                <div class="matrix-row" data-row-id="2" data-matrix-type="c">
-                    <input type="text" placeholder="c2.1" value="" class="disabled-input" readonly disabled /><!--
-                 --><input type="text" placeholder="c2.2" value="" class="disabled-input" readonly disabled /><!--
-             --></div>
+                <div class="matrix-box">
+                    <div class="matrix-row" data-row-id="1" data-matrix-type="c">
+                        <input type="text" placeholder="c1.1" value="" class="disabled-input" readonly disabled /><!--
+                    --><input type="text" placeholder="c1.2" value="" class="disabled-input" readonly disabled /><!--
+                --></div>
+                    <div class="matrix-row" data-row-id="2" data-matrix-type="c">
+                        <input type="text" placeholder="c2.1" value="" class="disabled-input" readonly disabled /><!--
+                    --><input type="text" placeholder="c2.2" value="" class="disabled-input" readonly disabled /><!--
+                --></div>
+                </div>
             </div>
             <div class="matrix matrix-a">
-                <div class="matrix-row" data-row-id="1" data-matrix-type="a">
-                    <input type="text" placeholder="a1.1" value="" /><!--
-                 --><input type="text" placeholder="a1.2" value="" /><!--
-             --></div>
-                <div class="matrix-row" data-row-id="2" data-matrix-type="a">
-                    <input type="text" placeholder="a2.1" value="" /><!--
-                 --><input type="text" placeholder="a2.2" value="" /><!--
-             --></div>
+                <div class="matrix-box">
+                    <div class="matrix-row" data-row-id="1" data-matrix-type="a">
+                        <input type="text" placeholder="a1.1" value="" /><!--
+                    --><input type="text" placeholder="a1.2" value="" /><!--
+                --></div>
+                    <div class="matrix-row" data-row-id="2" data-matrix-type="a">
+                        <input type="text" placeholder="a2.1" value="" /><!--
+                    --><input type="text" placeholder="a2.2" value="" /><!--
+                --></div>
+                </div>
+                <span>A</span>
             </div>
-            <span>A</span>
         </div>
         <div class="content-row content-row-second">
             <div class="matrix matrix-b">
-                <div class="matrix-row" data-row-id="1" data-matrix-type="b">
-                    <input type="text" placeholder="b1.1" value="" /><!--
-                 --><input type="text" placeholder="b1.2" value="" /><!--
-             --></div>
-                <div class="matrix-row" data-row-id="2" data-matrix-type="b">
-                    <input type="text" placeholder="b2.1" value="" /><!--
-                 --><input type="text" placeholder="b2.2" value="" /><!--
-             --></div>
+                <div class="matrix-box">
+                    <div class="matrix-row" data-row-id="1" data-matrix-type="b">
+                        <input type="text" placeholder="b1.1" value="" /><!--
+                    --><input type="text" placeholder="b1.2" value="" /><!--
+                --></div>
+                    <div class="matrix-row" data-row-id="2" data-matrix-type="b">
+                        <input type="text" placeholder="b2.1" value="" /><!--
+                    --><input type="text" placeholder="b2.2" value="" /><!--
+                --></div>
+                </div>
+                <span>B</span>
             </div>
-            <span>B</span>
         </div>
     </section>
     

@@ -21,7 +21,6 @@
     $(".multiply-matrix", $controls).on("selectstart", false);
     
     $(document).ready(function () {
-        //$(":text", ".content").placeholderEnhanced();
         if (detectIE()) {
            $("html").addClass("IE");
            $(":text", ".content").placeholderEnhanced();
@@ -129,7 +128,7 @@
         }
         
         if ($(".matrix-row", $matrix).length < maxRows) {
-            $newRow.appendTo($matrix);
+            $newRow.appendTo($(".matrix-box", $matrix));
             $(".matrix-row", $matrix).last().attr("data-row-id", newId);
             $(".matrix-row", $matrix).last().cleanMatrixRow();
             setEditMode();

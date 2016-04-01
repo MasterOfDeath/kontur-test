@@ -1,4 +1,9 @@
-﻿body {
+﻿@font-face {
+    font-family: Kontur;
+    src: url(../fonts/kontur-iconic-eco.ttf) format(truetype);
+}
+
+body {
     position: absolute;
     top: 0;
     right: 0;
