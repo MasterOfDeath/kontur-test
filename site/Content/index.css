@@ -1,6 +1,7 @@
 ﻿@font-face {
     font-family: Kontur;
-    src: url(../fonts/kontur-iconic-eco.ttf) format(truetype);
+    src: url("../fonts/kontur-iconic-eco.ttf") format("truetype");
+    src: url("../fonts/kontur-iconic-eco.woff") format("woff");
 }
 
 body {

@@ -123,45 +123,33 @@
 }
 
 .controls .clean-matrix::before {
-    content: "";
+    content: "\E012";
     display: inline-block;
-    background: url(../images/clean-matrix.png);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    font-size: 11pt;
     width: 24px;
 	height: 14px;
 }
 
 .controls .exchange-matrix::before {
-    content: "";
+    content: "\E01F";
     display: inline-block;
-    background: url(../images/exchange-matrix.png);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    font-size: 11pt;
     width: 20px;
 	height: 14px;
 }
 
 .controls .add-row::before, .controls .add-col::before {
-    content: "";
+    content: "\E00D";
     display: inline-block;
-    background: url(../images/add-matrix.png);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+    font-size: 11pt;
     width: 20px;
 	height: 14px;
 }
 
 .controls .remove-row::before, .controls .remove-col::before {
-    content: "";
+    content: "\E01E";
     display: inline-block;
-    background: url(../images/remove-matrix.png);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: 50% 60%;
+    font-size: 11pt;
     width: 20px;
 	height: 14px;
 }

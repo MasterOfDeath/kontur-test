@@ -1,8 +1,6 @@
 .content .matrix {
     display: inline-block;
     position: relative;
-    /*padding: 7px;
-    margin: 20px;*/
 }
 
 .content .matrix-box {
@@ -59,7 +57,7 @@
 .content .matrix input {
     padding-top: 20px;
     width: 40px;
-    font-family: Kontur, 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 11pt;
     text-align: center;
     margin: 3px;
