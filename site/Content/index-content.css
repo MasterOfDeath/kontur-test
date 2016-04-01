@@ -1,0 +1,78 @@
+.content .matrix {
+    display: inline-block;
+    position: relative;
+    padding: 7px;
+    margin: 20px;
+}
+
+.content .matrix:before {
+   content: "";
+   position: absolute;
+   border-left: 2px solid #666;
+   border-top: 2px solid #666;
+   border-bottom: 2px solid #666;
+   padding: 0 5px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.content .matrix:after
+{
+    content:"";
+    position: absolute;
+    border-right: 2px solid #666;
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+    padding: 0 5px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content .content-row-first {
+    position: relative;
+}
+
+.content .content-row-second {
+    display: inline-block;
+}
+
+.content .content-row-first span {
+    position: absolute;
+    top: 50%;
+}
+
+.content .content-row-second span {
+    display: block;
+    margin-left: 47%;
+}
+
+.content .matrix input {
+    padding-top: 20px;
+    width: 40px;
+    font-size: 11pt;
+    text-align: center;
+    margin: 3px;
+    border: 1px solid rgb(154, 154, 154);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    background-color: #ffffff;
+}
+
+.content .matrix input.disabled-input {
+    background-color: #f2f2f2;
+}
+
+.content .matrix input:focus {
+    border: 1.5px solid #5199db;
+}
+
+/*-IE-*/
+
+.IE .content .matrix input:focus {
+    margin: 2.5px;
+}
+
+/*-IE-*/

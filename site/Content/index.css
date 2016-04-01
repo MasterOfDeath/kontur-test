@@ -1,0 +1,29 @@
+﻿body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.controls, .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*z-index: 0;*/
+}
+
+.controls {
+    width: 32%;
+    left: 0;
+}
+
+.content {
+    width: 68%;
+    right: 0;
+}
+
+.controls .control-group {
+    margin: 30px;
+}
+

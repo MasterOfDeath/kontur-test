@@ -1,0 +1,383 @@
+@font-face {
+    font-family: Kontur;
+    src: url(../fonts/kontur-iconic-eco.ttf) format(truetype);
+}
+
+.controls button, .controls .multiply-matrix, .controls span, .controls label {
+    font-family: Kontur, 'Segoe UI', sans-serif;
+    font-size: 10pt;
+}
+
+.controls.normal {
+    background-color: #bcbcbc;
+}
+
+.controls.edit {
+    background-color: #5199db;
+}
+
+.controls.error {
+    background-color: #f6c1c0;
+}
+
+.controls .control-row {
+    margin: 10px 0;
+}
+
+.controls .multiply-matrix {
+    background-image: url("../images/button.svg");
+    background-size: cover;
+    width: 170px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 11pt;
+}
+
+.controls .multiply-matrix:hover {
+    cursor: default;
+    background: url("../images/button-hover.svg");
+    background-size: cover;
+}
+
+.controls .multiply-matrix:focus {
+    background: url("../images/button-focus.svg");
+    background-size: cover;
+    padding: 3px;
+    margin: -3px;
+}
+
+.controls .multiply-matrix:focus:hover {
+    background: url("../images/button-focus-hover.svg");
+    background-size: cover;
+    padding: 3px;
+    margin: -3px
+}
+
+.controls .control-group .multiply-matrix:active {
+    background: url("../images/button-active.svg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    line-height: 42px;
+}
+
+.controls button {
+    padding: 6px 6px 6px 2px;
+    border: 1px solid rgb(154, 154, 154);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fefefe; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ebebeb));
+    background-image: -webkit-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -moz-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -ms-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -o-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: linear-gradient(to bottom, #fefefe, #ebebeb);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fefefe, endColorstr=#ebebeb);
+}
+
+.controls button:hover {
+    border: 1px solid rgb(154, 154, 154);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#dedede));
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -moz-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -ms-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -o-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: linear-gradient(to bottom, #f2f2f2, #dedede);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f2f2, endColorstr=#dedede);
+}
+
+.controls button:focus {
+    border: 1.5px solid #5199db;
+    background-color: #fefefe; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ebebeb));
+    background-image: -webkit-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -moz-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -ms-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -o-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: linear-gradient(to bottom, #fefefe, #ebebeb);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fefefe, endColorstr=#ebebeb);
+}
+
+.controls button:focus:hover {
+    border: 1.5px solid #5199db;
+    background-color: #f2f2f2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#dedede));
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -moz-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -ms-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -o-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: linear-gradient(to bottom, #f2f2f2, #dedede);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f2f2, endColorstr=#dedede);
+}
+
+.controls .control-group button:active {
+    border: 1px solid rgb(101, 101, 101);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #d9d9d9;
+    box-shadow: inset 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+.controls .clean-matrix::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/clean-matrix.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 24px;
+	height: 14px;
+}
+
+.controls .exchange-matrix::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/exchange-matrix.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 20px;
+	height: 14px;
+}
+
+.controls .add-row::before, .controls .add-col::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/add-matrix.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    width: 20px;
+	height: 14px;
+}
+
+.controls .remove-row::before, .controls .remove-col::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/remove-matrix.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    width: 20px;
+	height: 14px;
+}
+
+.controls .radio {
+	vertical-align: top;
+	width: 17px;
+	height: 17px;
+	margin: 0 3px 0 0;
+}
+
+.controls .radio + label {
+	cursor: pointer;
+}
+
+.controls .radio:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+
+.controls .radio:not(checked) + label {
+	position: relative;
+	padding: 0 0 0 22px;
+}
+
+.controls .radio:not(checked) + label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%;
+	border: 1px solid rgb(154, 154, 154);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    background-color: #fefefe;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ebebeb));
+    background-image: -webkit-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -moz-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -ms-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -o-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: linear-gradient(to bottom, #fefefe, #ebebeb);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fefefe, endColorstr=#ebebeb);
+}
+
+.controls .radio:not(checked) + label::after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: #353535;
+    opacity: 0;
+}
+
+.controls .radio:checked + label::after {
+	opacity: 1;
+}
+
+.controls .radio:not(checked) + label:hover::before {
+	content: "";
+	background-color: #f2f2f2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#dedede));
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -moz-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -ms-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: -o-linear-gradient(top, #f2f2f2, #dedede);
+    background-image: linear-gradient(to bottom, #f2f2f2, #dedede);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f2f2, endColorstr=#dedede);
+}
+
+.controls .control-group .radio:active + label::before {
+    background-color: #d9d9d9;
+    background-image: none;
+}
+
+.controls .control-group .radio:active + label::after {
+    opacity: 1;
+}
+
+.controls .radio:focus + label::before {
+	box-shadow: 0 0 0 1.5px #5199db;
+}
+
+.controls .error-msg {
+    color: red;
+}
+
+/*-IE-*/
+
+.IE .controls .control-group button:first-child {
+    margin-right: 20px;
+}
+
+.IE .controls .control-group button {
+    padding: 7px 10px;
+}
+
+.IE .controls .control-group .control-row button:active {
+    margin: 0;
+}
+
+.IE .controls .control-group button:focus {
+    margin: -0.5px;
+}
+
+.IE .controls .control-group button:focus:first-child {
+    margin: -0.5px 19.5px -0.5px -0.5px;
+}
+
+.IE .controls .control-group .control-row button:first-child:active {
+    margin: 0 20px 0 0;
+}
+
+/*-IE-*/
+
+/*.controls .multiply-matrix {
+    position: relative;
+    height: 40px;
+    border: 1px solid rgb(49, 77, 41);
+    border: 1px solid rgba(22, 80, 7, .5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px 11px 10px 10px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #4ba91d; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4ba91d), to(#37910b));
+    background-image: -webkit-linear-gradient(top, #4ba91d, #37910b);
+    background-image: -moz-linear-gradient(top, #4ba91d, #37910b);
+    background-image: -ms-linear-gradient(top, #4ba91d, #37910b);
+    background-image: -o-linear-gradient(top, #4ba91d, #37910b);
+    background-image: linear-gradient(to bottom, #4ba91d, #37910b);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#4ba91d, endColorstr=#37910b);
+    overflow: visible;
+}
+
+.controls .multiply-matrix:hover {
+    border: 1px solid rgb(49, 77, 53);
+    border: 1px solid rgba(19, 71, 4, .5);
+    background-color: #307e0a; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#307e0a), to(#3b8d13));
+    background-image: -webkit-linear-gradient(top, #307e0a, #3b8d13);
+    background-image: -moz-linear-gradient(top, #307e0a, #3b8d13);
+    background-image: -ms-linear-gradient(top, #307e0a, #3b8d13);
+    background-image: -o-linear-gradient(top, #307e0a, #3b8d13);
+    background-image: linear-gradient(to bottom, #307e0a, #3b8d13);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#307e0a, endColorstr=#3b8d13);
+}
+
+.controls .multiply-matrix:focus {
+    outline: none;
+    box-shadow: inset 0 0 2px 2px rgba(255,255,255,0.9);
+    border: 2px solid #5199db;
+}
+
+.controls .multiply-matrix:focus:before {
+    border: 2px solid #5199db;
+    top: 20px;
+}
+
+.controls.normal .multiply-matrix::after {
+    content: '';
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	right: -13.5px;
+	top: 5px;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 5px 7px 5px 25px;
+	background: linear-gradient(135deg, #4ba91d, #37910b);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #4ba91d;
+}
+
+.controls.normal .multiply-matrix:hover::after {
+    background: linear-gradient(135deg, #307e0a, #3b8d13);
+    background-color: #307e0a;
+}
+
+.controls.normal .multiply-matrix::before {
+    content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -13px;
+	top: 4.5px;
+    border: 2px solid transparent;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px 7px 3px 5px;
+    background-color: rgb(49, 77, 41);
+	background-color: rgba(22, 80, 7, .5);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.controls.normal .multiply-matrix:hover::before {
+    background-color: rgb(49, 77, 53);
+    background-color: rgba(19, 71, 4, .5);
+}*/

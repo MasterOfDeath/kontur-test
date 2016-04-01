@@ -1,0 +1,27 @@
+/*.controls .control-group button:first-child {
+    margin-right: 20px;
+}*/
+
+.controls .control-group button {
+    padding: 7px 10px;
+}
+
+.controls .control-group .control-row button:active {
+    margin: 0;
+}
+
+.controls .control-group button:focus {
+    margin: -0.5px;
+}
+
+.controls .control-group button:focus:first-child {
+    margin: -0.5px 19.5px -0.5px -0.5px;
+}
+
+.controls .control-group .control-row button:first-child:active {
+    margin: 0 20px 0 0;
+}
+
+.content .matrix input:focus {
+    margin: 2.5px;
+}
