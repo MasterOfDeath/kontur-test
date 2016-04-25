@@ -7,8 +7,4 @@
         $(event.target).css("box-shadow", "0 0 0 2px #5199db");
     });
     
-    $(document).ready(function () {
-        $(":text", ".content").placeholderEnhanced();
-    });
-    
 })();
